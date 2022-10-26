@@ -1,0 +1,16 @@
+[Unit]
+Description=Telega Bot
+After=network.target
+
+[Service]
+User=polli
+Group=polli
+
+WorkingDirectory=/home/polli/PDX/
+Environment="PYTHONPATH=/home/polli/PDX/"
+ExecStart=/home/polli/PDX/.venv/bin/python /home/polli/PDX/Run.py
+RestartSec=10
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
