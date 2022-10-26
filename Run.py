@@ -17,7 +17,7 @@ def memes(message):
 
 @bot.message_handler(commands=['start'])
 def start_message(message):
-    bot.send_message(message.chat.id,"Привет вот все мои команды /help, /start, /mem, /memes")
+    bot.send_message(message.chat.id,"Привет вот все мои команды /help, /start, /mem, /mems")
 
 @bot.message_handler(commands=['help'])
 def help_message(message):
